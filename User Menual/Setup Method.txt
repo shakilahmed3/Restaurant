@@ -1,0 +1,38 @@
+How to setup Application in any computer.
+
+Step 01: At first Download Netbeans and Jdk and install it.
+
+Link: https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html
+
+
+
+Step 02: Download XAMPP Software and install.
+
+Link: https://www.apachefriends.org/download.html
+
+Step 03: Create Database in XAMPP.
+Code: create database restaurant;
+
+Note : Your database Name should be  'restaurant'. Without it software do not work. So carefully handle it. 
+
+Step 04: After creating restaurant database now select restaurant database and import sql from (User menual) Folder, Where I have provided database sql.
+
+
+Step 05: Now Open project by the netbeans software.
+
+Step 06: Find restaurant.java file from src/restaurant/restaurant.java, This is the main class in this project.
+
+Step 07: Now Run it..........
+
+Step 08: Congrats...... Now you can use it totally free of cost only for education purpose. So, Do not try to use commersial purpose without contact me. 
+
+Contact me.
+
+Md. Shakil Ahmed
+shakilatrai5@gmail.com
++8801627098985
+https://www.facebook.com/cseshakil6
+
+Thank you...
+
+

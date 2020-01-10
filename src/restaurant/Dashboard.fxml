@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="719.0" styleClass="center_background" stylesheets="@../CSS/AllStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.DashboardController">
+   <children>
+      <ImageView fitHeight="590.0" fitWidth="558.0" layoutX="83.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MoneyTree.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="21.0" layoutY="36.0" prefHeight="91.0" prefWidth="203.0" styleClass="button2" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <Text fill="WHITE" layoutX="62.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Item">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="42.0" fitWidth="51.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/fooddish2.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="FoodItem" fill="WHITE" layoutX="52.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="134.0185545682907">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="14.0" radius="6.5" width="14.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="265.0" layoutY="36.0" prefHeight="91.0" prefWidth="203.0" styleClass="button2" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <Text fill="WHITE" layoutX="50.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today Profit">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="29.0" layoutY="77.0" size="35" />
+            <ImageView fitHeight="42.0" fitWidth="51.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Profit2.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="TodayProfit" fill="WHITE" layoutX="51.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="142.88819271326065">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="14.0" radius="6.5" width="14.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="502.0" layoutY="332.0" prefHeight="91.0" prefWidth="203.0" styleClass="button2" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <Text fill="WHITE" layoutX="65.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER_SECRET" layoutX="23.0" layoutY="43.0" size="40" text="" wrappingWidth="34.28571319580078" />
+            <Text fx:id="TotalEmployee" fill="WHITE" layoutX="63.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="115.9033263027668">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="14.0" radius="6.5" width="14.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="22.0" layoutY="211.0" prefHeight="91.0" prefWidth="203.0" styleClass="button2" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <Text fill="WHITE" layoutX="60.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Sell">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="42.0" fitWidth="51.0" layoutX="15.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Sale1.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="39.0" layoutY="75.0" size="35" />
+            <Text fx:id="TotalSell" fill="WHITE" layoutX="60.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="120.60302866622806">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="14.0" radius="6.5" width="14.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="22.0" layoutY="332.0" prefHeight="91.0" prefWidth="203.0" styleClass="button2" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <Text fill="WHITE" layoutX="55.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Profit">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="31.0" layoutY="77.0" size="35" />
+            <ImageView fitHeight="42.0" fitWidth="51.0" layoutX="12.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Profit2.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="TotalProfit" fill="WHITE" layoutX="51.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="142.8881873562932">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="14.0" radius="6.5" width="14.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="502.0" layoutY="211.0" prefHeight="91.0" prefWidth="203.0" styleClass="button2" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <Text fill="WHITE" layoutX="50.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Salary">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="28.0" layoutY="77.0" size="35" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USER_SECRET" layoutX="9.0" layoutY="39.0" size="40" text="" wrappingWidth="34.28571319580078" />
+            <Text fx:id="TotalEmployeeSalary" fill="WHITE" layoutX="54.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="134.0185545682907">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="14.0" radius="6.5" width="14.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="502.0" layoutY="36.0" prefHeight="91.0" prefWidth="203.0" styleClass="button2" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <Text fill="WHITE" layoutX="60.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today Sell">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="42.0" fitWidth="51.0" layoutX="15.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Sale1.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="39.0" layoutY="75.0" size="35" />
+            <Text fx:id="TodaySell" fill="WHITE" layoutX="60.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="134.0185545682907">
+               <font>
+                  <Font name="Agency FB Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="14.0" radius="6.5" width="14.0" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

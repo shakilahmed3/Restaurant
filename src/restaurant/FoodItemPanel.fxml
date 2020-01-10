@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="590.0" prefWidth="719.0" styleClass="center_background" stylesheets="@../CSS/AllStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.FoodItemPanelController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="719.0" spacing="15.0" styleClass="topbar-background" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="LIST_UL" size="30">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </FontAwesomeIconView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="All Food Items">
+               <font>
+                  <Font name="Agency FB Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+         </children>
+      </HBox>
+      <TableView fx:id="FoodItemTable" layoutX="28.0" layoutY="103.0" prefHeight="450.0" prefWidth="517.0" styleClass="column-header-background" stylesheets="@../CSS/AllStyle.css">
+        <columns>
+          <TableColumn fx:id="FoodIDC" prefWidth="60.0" text="Food ID" />
+          <TableColumn fx:id="FoodNameC" prefWidth="122.0" text="Food Name" />
+            <TableColumn fx:id="BuyingPriceC" prefWidth="132.0" text="Buying Price" />
+            <TableColumn fx:id="SellingPriceC" prefWidth="109.0" text="Selling Price" />
+            <TableColumn fx:id="ProfitC" prefWidth="93.0" text="Profit" />
+        </columns>
+      </TableView>
+      <Label layoutX="28.0" layoutY="66.0" text="Search">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Search" layoutX="86.0" layoutY="59.0" onAction="#SearchFood" prefHeight="31.0" prefWidth="179.0" promptText="Search By Id" styleClass="input" stylesheets="@../CSS/AllStyle.css">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="571.0" layoutY="245.0" mnemonicParsing="false" onAction="#DeleteFoodItem" prefHeight="50.0" prefWidth="126.0" styleClass="button3" stylesheets="@../CSS/AllStyle.css" text="Delate" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="35" />
+         </graphic>
+      </Button>
+      
+      <Button layoutX="572.0" layoutY="315.0" mnemonicParsing="false" onAction="#ExportFoodItem" prefHeight="49.0" prefWidth="126.0" styleClass="button3" stylesheets="@../CSS/AllStyle.css" text="Export" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="25.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/excell.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+        </Button>
+      
+   </children>
+</AnchorPane>

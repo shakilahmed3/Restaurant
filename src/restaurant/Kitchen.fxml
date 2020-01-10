@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="719.0" styleClass="center_background" stylesheets="@../CSS/AllStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.KitchenController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="38.0" prefWidth="719.0" spacing="15.0" styleClass="topbar-background" stylesheets="@../CSS/AllStyle.css">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Kitchen1.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kitchen">
+               <font>
+                  <Font name="Agency FB Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+         </children>
+      </HBox>
+      
+       <Button layoutX="571.0" layoutY="311.0" mnemonicParsing="false" onAction="#FoodServe" prefHeight="57.0" prefWidth="141.0" styleClass="button3" stylesheets="@../CSS/AllStyle.css" text="Serve" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Serve2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      
+      <ComboBox fx:id="KitchenNo" layoutX="77.0" layoutY="59.0" onAction="#KitchenAction" prefHeight="40.0" prefWidth="169.0" promptText="Select Kitchen" />
+      <Label layoutX="24.0" layoutY="66.0" text="Kitchen">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="KitchenTable" layoutX="12.0" layoutY="113.0" prefHeight="461.0" prefWidth="552.0" styleClass="column-header-background" stylesheets="@../CSS/AllStyle.css">
+         <columns>
+            <TableColumn fx:id="OrderIDC" minWidth="20.0" prefWidth="74.0" text="Order  ID" />
+            <TableColumn fx:id="FoodNameC" prefWidth="183.0" text="Food Name" />
+            <TableColumn fx:id="QuantityC" prefWidth="65.0" text="Quantity" />
+            <TableColumn fx:id="TableNoC" prefWidth="61.0" text="Table No" />
+            <TableColumn fx:id="OrderTypeC" prefWidth="103.0" text="Order Type" />
+            <TableColumn fx:id="KitchenC" prefWidth="63.0" text="Kitchen" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
